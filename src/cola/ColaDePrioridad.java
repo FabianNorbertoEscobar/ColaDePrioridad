@@ -28,7 +28,7 @@ public class ColaDePrioridad {
 	}
 
 	public boolean estaLlena() {
-		return this.estaLlena();
+		return this.monticulo.estaLleno();
 	}
 
 	public void insertar(int nuevo) throws IllegalStateException {
