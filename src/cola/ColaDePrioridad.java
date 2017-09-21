@@ -32,7 +32,7 @@ public class ColaDePrioridad {
 	}
 
 	public void insertar(int nuevo) throws IllegalStateException {
-		if (this.monticulo.estaLleno()) {
+		if (this.estaLlena()) {
 			throw new IllegalStateException("No se puede insertar. Cola de prioridad llena.");
 		}
 		this.cantidadDeElementos++;
@@ -40,15 +40,15 @@ public class ColaDePrioridad {
 	}
 
 	public int eliminar() throws IllegalStateException {
-		if (this.monticulo.estaVacio()) {
+		if (this.estaVacia()) {
 			throw new IllegalStateException("No se puede eliminar. Cola de prioridad vacía.");
 		}
 		this.cantidadDeElementos--;
 		return this.eliminar();
 	}
 
-	public int pispear() {
-		if (this.monticulo.estaVacio()) {
+	public int pispear() throws IllegalStateException {
+		if (this.estaVacia()) {
 			throw new IllegalStateException("No se puede pispear. Cola de prioridad vacía.");
 		}
 		return this.pispear();
