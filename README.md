@@ -1,6 +1,6 @@
 # Cola de Prioridad
 
-Una cola de prioridad es un tipo de dato abstracto similar a una cola en la que los elementos tiene adicionalmente una prioridad asignada.
+Una cola de prioridad es un tipo de dato abstracto similar a una cola en la que los elementos tienen adicionalmente una prioridad asignada.
 Los elementos de la cola se van desacolando según su prioridad.
 Al igual que una cola común y corriente, las operaciones que se le pueden aplicar son insertar, eliminar y pispear (observar el próximo elemento a ser desacolado)
 
